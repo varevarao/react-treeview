@@ -85,12 +85,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	var TreeView = (function (_React$PureComponent) {
 	  _inherits(TreeView, _React$PureComponent);
 	
-	  function TreeView(props) {
-	    _classCallCheck(this, TreeView);
-	
-	    _get(Object.getPrototypeOf(TreeView.prototype), 'constructor', this).call(this, props);
-	
-	    this.propTypes = {
+	  _createClass(TreeView, null, [{
+	    key: 'propTypes',
+	    value: {
 	      arrow: _propTypes2['default'].element,
 	      collapsed: _propTypes2['default'].bool,
 	      defaultCollapsed: _propTypes2['default'].bool,
@@ -99,7 +96,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      itemClassName: _propTypes2['default'].string,
 	      childrenClassName: _propTypes2['default'].string,
 	      treeViewClassName: _propTypes2['default'].string
-	    };
+	    },
+	    enumerable: true
+	  }]);
+	
+	  function TreeView(props) {
+	    _classCallCheck(this, TreeView);
+	
+	    _get(Object.getPrototypeOf(TreeView.prototype), 'constructor', this).call(this, props);
+	
 	    this.state = {
 	      collapsed: props.defaultCollapsed
 	    };
@@ -154,7 +159,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2['default'].createElement(
 	          'div',
 	          { className: 'tree-view_item ' + itemClassName },
-	          arrow,
+	          children && children.length > 0 && arrow,
 	          nodeLabel
 	        ),
 	        _react2['default'].createElement(
