@@ -1,7 +1,7 @@
 {
-  "name": "react-treeview",
+  "name": "react-treeview-icons",
   "version": "0.4.7",
-  "description": "Easy, light, flexible tree view made with React.",
+  "description": "Easy, light, flexible tree view made with React, with the option to supply custom arrow icons.",
   "main": "lib/react-treeview.js",
   "directories": {
     "demos": "demos"
@@ -28,12 +28,12 @@
     "ui",
     "react-component"
   ],
-  "author": "chenglou <chenglou92@gmail.com>",
+  "author": "vrao <varevarao@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chenglou/react-treeview/issues"
+    "url": "https://github.com/varevarao/react-treeview/issues"
   },
-  "homepage": "https://github.com/chenglou/react-treeview",
+  "homepage": "https://github.com/varevarao/react-treeview",
   "peerDependencies": {
     "react": ">=0.14.0"
   },
