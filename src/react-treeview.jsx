@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class TreeView extends React.PureComponent {
-  propTypes: {
+  propTypes = {
+    arrow: PropTypes.element,
     collapsed: PropTypes.bool,
     defaultCollapsed: PropTypes.bool,
     nodeLabel: PropTypes.node.isRequired,
@@ -48,7 +49,7 @@ class TreeView extends React.PureComponent {
       containerClassName += ' tree-view_children-collapsed';
     }
 
-    const arrow = (
+    const arrow = (this.props.arrow ||
       <div
         {...rest}
         className={className + ' ' + arrowClassName}
